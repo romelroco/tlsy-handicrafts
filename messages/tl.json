@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "home": "Tahanan",
+    "about": "Tungkol",
+    "products": "Mga Produkto",
+    "contact": "Makipag-ugnayan",
+    "shopee": "Shopee"
+  },
+  "home": {
+    "hero_title": "TLSY Handicrafts",
+    "hero_subtitle": "Ang Maliit na Tindahan Taon 2020",
+    "hero_cta_browse": "Tingnan ang Mga Produkto",
+    "hero_cta_contact": "Makipag-ugnayan",
+    "featured_title": "Mga Pangunahing Produkto",
+    "categories_title": "Aming Mga Serbisyo"
+  },
+  "categories": {
+    "printing": "Serbisyo ng Printing",
+    "souvenirs": "Mga Alaala",
+    "invitations": "Mga Imbitasyon",
+    "digital": "Mga Produktong Dijital"
+  },
+  "product": {
+    "price": "Presyo",
+    "category": "Kategorya",
+    "turnaround": "Oras ng Paggawa",
+    "customization": "Maaaring I-customize",
+    "availability": "Availability",
+    "available": "Available",
+    "unavailable": "Walang Stock",
+    "yes": "Oo",
+    "no": "Hindi",
+    "view_details": "Tingnan ang Detalye",
+    "inquire": "Magtanong / Mag-request ng Custom",
+    "featured": "Pangunahing",
+    "specifications": "Mga Detalye",
+    "related": "Mga Kaugnay na Produkto"
+  },
+  "contact": {
+    "title": "Paano Makipag-ugnayan",
+    "form_title": "Magpadala ng Mensahe",
+    "name": "Pangalan",
+    "email": "Email",
+    "phone": "Telepono",
+    "subject": "Paksa",
+    "message": "Mensahe",
+    "submit": "Ipadala ang Mensahe",
+    "success": "Matagumpay na naipadala ang mensahe!",
+    "error": "Nabigo ang pagpapadala ng mensahe. Subukan muli.",
+    "social_title": "Makipag-ugnayan sa Amin"
+  },
+  "about": {
+    "title": "Tungkol sa TLSY Handicrafts",
+    "short_bio": "Maikling Bio",
+    "story": "Aking Kuwento",
+    "why": "Bakit TLSY?",
+    "services": "Mga Serbisyong Inaalok",
+    "experience": "Karanasan",
+    "years": "taon",
+    "cta": "Makipag-ugnayan Tayo"
+  },
+  "footer": {
+    "copyright": "© 2024 TLSY Handicrafts. Lahat ng karapatan ay nakalaan.",
+    "tagline": "Ang Maliit na Tindahan Taon 2020"
+  },
+  "common": {
+    "search": "Maghanap ng mga produkto...",
+    "filter": "I-filter ayon sa kategorya",
+    "all": "Lahat",
+    "loading": "Naglo-load...",
+    "error": "May naganap na error"
+  }
+}

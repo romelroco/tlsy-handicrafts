@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-text font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-primary;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-cream px-8 py-3 rounded-full font-semibold hover:bg-craft hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent text-primary border-2 border-primary px-8 py-3 rounded-full font-semibold hover:bg-primary hover:text-cream transition-all duration-300;
+  }
+  
+  .card {
+    @apply bg-secondary rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-warm transform hover:-translate-y-1;
+  }
+  
+  .crafty-border {
+    @apply border-4 border-double border-accent rounded-xl p-6 bg-gradient-to-br from-cream to-warm shadow-inner;
+  }
+  
+  .hero-section {
+    @apply bg-gradient-to-br from-warm via-cream to-secondary relative overflow-hidden;
+  }
+  
+  .decorative-corner {
+    @apply absolute w-16 h-16 border-accent;
+  }
+  
+  .decorative-corner.top-left {
+    @apply top-0 left-0 border-t-4 border-l-4 rounded-tl-2xl;
+  }
+  
+  .decorative-corner.top-right {
+    @apply top-0 right-0 border-t-4 border-r-4 rounded-tr-2xl;
+  }
+  
+  .decorative-corner.bottom-left {
+    @apply bottom-0 left-0 border-b-4 border-l-4 rounded-bl-2xl;
+  }
+  
+  .decorative-corner.bottom-right {
+    @apply bottom-0 right-0 border-b-4 border-r-4 rounded-br-2xl;
+  }
+}

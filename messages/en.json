@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact",
+    "shopee": "Shopee"
+  },
+  "home": {
+    "hero_title": "TLSY Handicrafts",
+    "hero_subtitle": "The Little Shop Year 2020",
+    "hero_cta_browse": "Browse Products",
+    "hero_cta_contact": "Get in Touch",
+    "featured_title": "Featured Products",
+    "categories_title": "Our Services"
+  },
+  "categories": {
+    "printing": "Printing Services",
+    "souvenirs": "Souvenirs",
+    "invitations": "Invitations",
+    "digital": "Digital Products"
+  },
+  "product": {
+    "price": "Price",
+    "category": "Category",
+    "turnaround": "Turnaround Time",
+    "customization": "Customization Available",
+    "availability": "Availability",
+    "available": "Available",
+    "unavailable": "Out of Stock",
+    "yes": "Yes",
+    "no": "No",
+    "view_details": "View Details",
+    "inquire": "Inquire / Request Custom",
+    "featured": "Featured",
+    "specifications": "Specifications",
+    "related": "Related Products"
+  },
+  "contact": {
+    "title": "How to Reach Me",
+    "form_title": "Send a Message",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again.",
+    "social_title": "Connect With Us"
+  },
+  "about": {
+    "title": "About TLSY Handicrafts",
+    "short_bio": "Short Bio",
+    "story": "My Story",
+    "why": "Why TLSY?",
+    "services": "Services Offered",
+    "experience": "Experience",
+    "years": "years",
+    "cta": "Let's Connect"
+  },
+  "footer": {
+    "copyright": "© 2024 TLSY Handicrafts. All rights reserved.",
+    "tagline": "The Little Shop Year 2020"
+  },
+  "common": {
+    "search": "Search products...",
+    "filter": "Filter by category",
+    "all": "All",
+    "loading": "Loading...",
+    "error": "An error occurred"
+  }
+}
