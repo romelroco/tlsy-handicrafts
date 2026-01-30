@@ -1,11 +1,26 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useLocale } from 'next-intl';
 import { useAnalytics } from '@/hooks/useAnalytics';
+import { supabase } from '@/lib/supabase';
 
 export default function ShopeePage() {
   const locale = useLocale();
   useAnalytics(locale);
+  const [shopeeUrl, setShopeeUrl] = useState('https://shopee.ph/tlsyhandicrafts');
+
+  useEffect(() => {
+    const fetchShopeeLink = async () => {
+      const { data } = await supabase
+        .from('social_links')
+        .select('url')
+        .eq('platform', 'Shopee')
+        .single();
+      if (data?.url) setShopeeUrl(data.url);
+    };
+    fetchShopeeLink();
+  }, []);
 
   return (
     <div className="container mx-auto px-4 py-16">
@@ -20,7 +35,7 @@ export default function ShopeePage() {
               : 'Shopee integration coming soon! Meanwhile, visit our Shopee shop:'}
           </p>
           <a
-            href="https://shopee.ph"
+            href={shopeeUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-block"
