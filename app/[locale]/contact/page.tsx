@@ -7,7 +7,7 @@ import { useAnalytics } from '@/hooks/useAnalytics';
 export default function ContactPage() {
   const t = useTranslations('contact');
   const locale = useLocale();
-  const { logEvent } = useAnalytics(locale);
+  useAnalytics(locale);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -31,7 +31,6 @@ export default function ContactPage() {
       if (response.ok) {
         setStatus('success');
         setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-        logEvent('contact_form_submit');
       } else {
         setStatus('error');
       }

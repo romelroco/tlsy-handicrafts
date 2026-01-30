@@ -12,7 +12,7 @@ export default function ProductsPage() {
   const tCommon = useTranslations('common');
   const tCat = useTranslations('categories');
   const locale = useLocale();
-  const { logEvent } = useAnalytics(locale);
+  useAnalytics(locale);
   const searchParams = useSearchParams();
   const [products, setProducts] = useState<Product[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
@@ -46,7 +46,6 @@ export default function ProductsPage() {
 
     if (selectedCategory !== 'all') {
       filtered = filtered.filter((p) => p.category.toLowerCase().includes(selectedCategory));
-      logEvent('category_filter', undefined, { category: selectedCategory });
     }
 
     if (searchQuery) {
@@ -61,7 +60,7 @@ export default function ProductsPage() {
     }
 
     setFilteredProducts(filtered);
-  }, [selectedCategory, searchQuery, products, locale, logEvent]);
+  }, [selectedCategory, searchQuery, products, locale]);
 
   const categories = [
     { key: 'all', name: tCommon('all') },

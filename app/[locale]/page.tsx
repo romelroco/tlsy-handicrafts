@@ -11,7 +11,7 @@ export default function HomePage() {
   const t = useTranslations('home');
   const tCat = useTranslations('categories');
   const locale = useLocale();
-  const { logEvent } = useAnalytics(locale);
+  useAnalytics(locale);
   const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
 
   useEffect(() => {
@@ -98,7 +98,6 @@ export default function HomePage() {
               key={cat.key}
               href={`/${locale}/products?category=${cat.key}`}
               className={`group relative overflow-hidden rounded-2xl p-8 text-center bg-gradient-to-br ${cat.color} hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl`}
-              onClick={() => logEvent('category_click', undefined, { category: cat.key })}
             >
               <div className="relative z-10">
                 <div className="text-6xl mb-4 transform group-hover:scale-110 transition-transform duration-300">

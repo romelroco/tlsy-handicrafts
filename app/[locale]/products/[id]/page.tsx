@@ -13,7 +13,7 @@ export default function ProductDetailPage() {
   const router = useRouter();
   const t = useTranslations('product');
   const locale = useLocale();
-  const { logEvent } = useAnalytics(locale);
+  useAnalytics(locale);
   const [product, setProduct] = useState<Product | null>(null);
   const [selectedImage, setSelectedImage] = useState(0);
 
@@ -27,11 +27,10 @@ export default function ProductDetailPage() {
       
       if (data) {
         setProduct(data);
-        logEvent('product_view', data.id);
       }
     };
     fetchProduct();
-  }, [params.id, logEvent]);
+  }, [params.id]);
 
   if (!product) return <div className="container mx-auto px-4 py-16">Loading...</div>;
 
@@ -168,7 +167,6 @@ export default function ProductDetailPage() {
           <Link
             href={`/${locale}/contact?product=${product.id}`}
             className="btn-primary w-full block text-center"
-            onClick={() => logEvent('inquire_click', product.id)}
           >
             {t('inquire')}
           </Link>

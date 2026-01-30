@@ -29,22 +29,4 @@ export const trackPageView = async (pagePath: string, language: string) => {
   });
 };
 
-export const trackEvent = async (
-  eventName: string,
-  page: string,
-  language: string,
-  productId?: string,
-  additionalData?: Record<string, any>
-) => {
-  const session = getSessionId();
-  
-  await supabase.from('analytics_events').insert({
-    event_name: eventName,
-    page,
-    product_id: productId || null,
-    session_id: session,
-    user_language: language,
-    timestamp: new Date().toISOString(),
-    additional_data: additionalData || null,
-  });
-};
+
